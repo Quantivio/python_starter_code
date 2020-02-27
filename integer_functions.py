@@ -37,3 +37,24 @@ negative_number = -20 # Declaring a negative number.
 print(negative_number.to_bytes(2, byteorder='big', signed=True))
 print(negative_number.to_bytes(2, byteorder='little', signed=True))
 
+
+# Implementation of function from_bytes():
+
+""" Returns an integer number from the given array of bytes."""
+
+"""Syntax: variable.from_bytes(bytes, byteorder='big' or 'little', signed=True or False)"""
+
+""" 'big' = Most significant byte is at the start of the byte array.
+    'little' = Most significant byte is at the end of the byte array.
+"""
+
+print(int.from_bytes(b'\x00\x14', byteorder='big', signed=False))
+print(int.from_bytes(b'\x14\x00', byteorder='little', signed=False))
+
+""" For negative number only the signed attribute can be set to True."""
+
+print(int.from_bytes(b'\xff\xec', byteorder='big', signed=True))
+print(int.from_bytes(b'\xec\xff', byteorder='little', signed=True))
+
+
+
