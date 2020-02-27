@@ -13,4 +13,4 @@ print(~12)  # Printing the complement of 12
 
 #   Binary of 13                = 00001101
 #   Complement of 00001101      = 11110010
-#   2's Complement of 11110010  = 11110011
+#   2's Complement of 11110010  = 11110011  2's complement = 1's complement + 1
