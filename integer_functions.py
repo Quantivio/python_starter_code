@@ -1,4 +1,4 @@
-number = 20 #Declaring a number.
+number = 20  # Declaring a number.
 
 
 # Implementation of function as_integer_ratio():
@@ -32,7 +32,7 @@ print(number.to_bytes(2, byteorder='little', signed=False))
 
 """ For negative number only the signed attribute can be set to True."""
 
-negative_number = -20 # Declaring a negative number.
+negative_number = -20  # Declaring a negative number.
 
 print(negative_number.to_bytes(2, byteorder='big', signed=True))
 print(negative_number.to_bytes(2, byteorder='little', signed=True))
@@ -55,6 +55,3 @@ print(int.from_bytes(b'\x14\x00', byteorder='little', signed=False))
 
 print(int.from_bytes(b'\xff\xec', byteorder='big', signed=True))
 print(int.from_bytes(b'\xec\xff', byteorder='little', signed=True))
-
-
-
