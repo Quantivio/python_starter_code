@@ -63,5 +63,5 @@ print(type(string_integer), complex_string)
 string_complex = complex(string_integer)
 print(type(string_complex), string_complex)
 
-# Type casting complex to string:
+"""Note: Complex values can not be converted to integer or float."""
 
