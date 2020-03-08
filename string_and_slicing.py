@@ -1,6 +1,6 @@
 """ In python a single character or sequence of characters is treated as a string."""
 
-"""There are two techniques indexing and slicing that can be applied to strings in Python."""
+""" There are two techniques indexing and slicing that can be applied to strings in Python."""
 
 """ Indexing is technique used to view a single character from a string."""
 
@@ -45,7 +45,7 @@ step_count => How many characters should be skipped when slicing.
 
 """ POSITIVE SLICING """
 
-slice_variable = "Antidisestablishmentarianism"
+slice_variable = "Antidisestablishmentarianism"  # Declaring a string.
 
 """ 
 A n t i d i s e s t  a  b  l  i  s  h  m  e  n  t  a  r  i  a  n  i  s  m
@@ -60,13 +60,13 @@ print(slice_variable[7:20])
 
 # How to get all the characters before certain index value:
 
-print(slice_variable[:23]) 
+print(slice_variable[:23])
 
 # To get all the values before certain index value just specify the stop_index alone.
 
 # How to get all the characters after certain index value:
 
-print(slice_variable[7:]) 
+print(slice_variable[7:])
 
 # To get all the values after certain index value just specify the start_index alone.
 
@@ -80,9 +80,9 @@ The step_count works in such a way that it splits the given value into 1 + remai
     If step_count is 4 => It is split into 1 + 3
 """
 
-#Using step_count to skip 2 values:
+# Using step_count to skip 2 values:
 
-print(slice_variable[7:20:3]) 
+print(slice_variable[7:20:3])
 
 """ 
 In this example it works as 1 + 3 so that 1 character is accepted and 2 characters are skipped.
@@ -93,3 +93,40 @@ In this example it works as 1 + 3 so that 1 character is accepted and 2 characte
     't' - 1 is accepted and there are no more characters.
 """
 
+""" NEGATIVE INDEXING """
+
+""" Negative indexing is used to index values from the last i.e is the right hand side."""
+
+""" In python negative indexing starts from -1. """
+
+""" 
+  A   n   t   i   d   i   s   e   s   t   a   b   l   i   s   h   m   e    n  t  a  r  i  a  n  i  s  m
+-28 -27 -26 -25 -24 -23 -22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12  -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1
+"""
+
+
+# Negative indexing to view m from the slice_variable:
+
+print(slice_variable[-1])
+
+
+# Negative indexing to view s from the slice_variable:
+
+print(slice_variable[-20])
+
+
+""" NEGATIVE SLICING """
+
+"""  Negative slicing is used to slice values with the help of negative indexes. """
+
+""" Maximum error made while negative indexing is giving a higher start_index value on the left and lower stop_index value on the right."""
+
+print(slice_variable[-1:-3])  # Returns only null string "".
+
+# Negative slicing to slice "establishment":
+
+print(slice_variable[-21:-8])
+
+# Using step_count to skip 2 values:
+
+print(slice_variable[-21:-8:3])
