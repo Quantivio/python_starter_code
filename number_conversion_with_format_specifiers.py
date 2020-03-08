@@ -37,6 +37,7 @@ print("Decimal: %i\nHexadecimal: %x" % (octal, octal))
 
 hexadecimal = 0x100
 
-print("Decimal: %i\Octal: %x" % (hexadecimal, hexadecimal))
+print("Decimal: %i\nOctal: %x" % (hexadecimal, hexadecimal))
 
 
+""" %b can't be used for converting to binary."""
