@@ -9,4 +9,4 @@
 3. Close the command prompt.<br>
 4. Open command prompt in the desired folder.<br><br>
 ![Windows + r](https://cloud.addictivetips.com/wp-content/uploads/2018/07/file-explorer-cmd.jpg)<br>
-5. To run jupyter notebook type __'jupyter notebok'__ and press enter.
+5. To run jupyter notebook type __'jupyter notebok'__ in cmd and press enter.
