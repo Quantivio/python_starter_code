@@ -41,11 +41,13 @@ i.e shift the values after the dot."""
 
 print(12 >> 2)
 
-""" Internal working of the left shift operator."""
+""" Internal working of the right shift operator."""
 
 #  Binary of 12                           = 1100.0000
 #  Applying right shift of 2 to 1100.0000 = 11.0000000
 
 #  print(int(0b11)) => 3
+
+
 
 
