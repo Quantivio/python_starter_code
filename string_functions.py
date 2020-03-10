@@ -55,13 +55,41 @@ Takes two arguments:
 
 """
 
-""" 
-Errors:
-strict              => default response which raises a UnicodeDecodeError exception on failure.
-ignore              => ignores the unencodable unicode from the result
-replace             => replaces the unencodable unicode to a question mark ?
-xmlcharrefreplace   => inserts XML character reference instead of unencodable unicode
-backslashreplace    => inserts a \\uNNNN espace sequence instead of unencodable unicode
-namereplace         => inserts a \N{...} escape sequence instead of unencodable unicode
 
+# Errors:
+# strict              => default response which raises a UnicodeDecodeError exception on failure.
+# ignore              => ignores the unencodable unicode from the result
+# replace             => replaces the unencodable unicode to a question mark ?
+# xmlcharrefreplace   => inserts XML character reference instead of unencodable unicode
+# backslashreplace    => inserts a \\uNNNN espace sequence instead of unencodable unicode
+# namereplace         => inserts a \N{...} escape sequence instead of unencodable unicode
+
+# endswith():
+
+""" Returns True if a string ends with specified suffix."""
+
+print(string_.endswith("letter"))  # Returns True
+print(string_.endswith('e'))  # Returns False
+
+
+# expandstab():
+
+""" Syntax: variable_name.expandstab(tabsize=8)
 """
+
+""" 
+* Expands a tab space into white spaces passed as argument.
+* Default tabsize is 8.
+"""
+
+print("    Hello".expandtabs(20))
+
+
+# find():
+
+""" Used to find a substring or a character in a string."""
+
+""" It returns the starting index of the substring or return -1 if the substring is not found."""
+
+print(string_.find('let'))
+
