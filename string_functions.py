@@ -117,3 +117,5 @@ Only string can be passed in as argument or a list, tuple containing only string
 
 string_list = ['h', 'e', 'l', 'l', 'o']  # Declaring a list of characters.
 print("".join(string_list))
+
+# ljust() and rjust():
