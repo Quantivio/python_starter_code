@@ -94,11 +94,12 @@ print("    Hello".expandtabs(20))
 print(string_.find('let'))
 
 
-# format_map():     
+# format_map():
 
 """ It is similar to format function but takes a single dictionary as input."""
 
-dictionary = {'x': 4, 'y': 5}  # Declaring a dictionary with two key value pair.
+# Declaring a dictionary with two key value pair.
+dictionary = {'x': 4, 'y': 5}
 print("{x}-{y}".format_map(dictionary))
 
 # index():
@@ -107,7 +108,7 @@ print("{x}-{y}".format_map(dictionary))
 """ Returns value error if substring or character is not found."""
 
 print(string_.index('l'))
-print(string_.index('z'))  # Will give value error. 
+print(string_.index('z'))  # Will give value error.
 
 
 # join():
@@ -119,3 +120,56 @@ string_list = ['h', 'e', 'l', 'l', 'o']  # Declaring a list of characters.
 print("".join(string_list))
 
 # ljust() and rjust():
+
+""" This methods will return a left-justified or right-justified string based on the given width."""
+
+""" Syntax: varaible_name.ljust(width, fillchar)"""
+
+""" 
+width => It is the complete length of the string that the resulting string must have.
+fillchar => Minimum width of the string.
+NOTE : If fillchar is not specified then the default character is space. """
+
+animal = "cat"  # Declaring a string.
+
+print(animal.ljust(10, "*"))  # Left justify.
+
+print(animal.rjust(10, "*"))  # Right justify.
+
+
+# lower() and upper():
+
+""" Used to convert a lower-case string to upper-case and vice versa. """
+
+lower_case = "abcd"  # Declaring a string.
+
+upper_case = "ABCD"  # Declaring a string.
+
+print(lower_case.upper())
+
+print(upper_case.lower())
+
+
+# strip(), lstrip() and rstrip():
+
+""" Used to remove any repeating characters from a string from both sides. """
+
+""" This method takes one argument i.e the repeating character that must be removed. """
+
+""" When no argument is passed the default argument is space. """
+
+
+repeated_string = "qqqqqqqPythonqqqqq"  # Declaring a string.
+repeated_string_space = "         qqqqqqqPythonqqqqq               "  # Declaring a string.
+
+print(repeated_string.strip('q'))
+
+print(repeated_string_space.strip())  # When no argument is passed the default argument is space.
+
+left_repeat = "qqqqqApple"  # Declaring a string.
+
+right_repeat = "Appleqqqqq"  # Declaring a string.
+
+print(left_repeat.lstrip('q'))
+
+print(right_repeat.rstrip('q'))
