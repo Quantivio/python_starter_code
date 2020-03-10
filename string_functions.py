@@ -93,3 +93,27 @@ print("    Hello".expandtabs(20))
 
 print(string_.find('let'))
 
+
+# format_map():     
+
+""" It is similar to format function but takes a single dictionary as input."""
+
+dictionary = {'x': 4, 'y': 5}  # Declaring a dictionary with two key value pair.
+print("{x}-{y}".format_map(dictionary))
+
+# index():
+
+""" Returns the initial or start index of a substring inside the string."""
+""" Returns value error if substring or character is not found."""
+
+print(string_.index('l'))
+print(string_.index('z'))  # Will give value error. 
+
+
+# join():
+
+""" Used to concatinate any iterable into a single string value.
+Only string can be passed in as argument or a list, tuple containing only strings."""
+
+string_list = ['h', 'e', 'l', 'l', 'o']  # Declaring a list of characters.
+print("".join(string_list))
