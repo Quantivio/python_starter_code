@@ -108,7 +108,7 @@ print("{x}-{y}".format_map(dictionary))
 """ Returns value error if substring or character is not found."""
 
 print(string_.index('l'))
-print(string_.index('z'))  # Will give value error.
+# print(string_.index('z'))  # Will give value error.
 
 
 # join():
@@ -160,11 +160,13 @@ print(upper_case.lower())
 
 
 repeated_string = "qqqqqqqPythonqqqqq"  # Declaring a string.
-repeated_string_space = "         qqqqqqqPythonqqqqq               "  # Declaring a string.
+# Declaring a string.
+repeated_string_space = "         qqqqqqqPythonqqqqq               "
 
 print(repeated_string.strip('q'))
 
-print(repeated_string_space.strip())  # When no argument is passed the default argument is space.
+# When no argument is passed the default argument is space.
+print(repeated_string_space.strip())
 
 left_repeat = "qqqqqApple"  # Declaring a string.
 
@@ -173,3 +175,102 @@ right_repeat = "Appleqqqqq"  # Declaring a string.
 print(left_repeat.lstrip('q'))
 
 print(right_repeat.rstrip('q'))
+
+
+# maketrans():
+
+""" Maketrans returns a mapping table that can be used for transaltaion using the translate() method."""
+""" Maketrans can be useful for translating various characters with other charcters in a particular string."""
+
+""" Syntax: string.maketrans(x=dict, y, z)
+* y and z are optional.
+"""
+
+string = "abc"  # Declaring s tring value.
+
+dictionary = {"a": '123', "b": '456', "c": '789'}
+
+print(table:= string.maketrans(dictionary))  # Using warlus operator.
+
+
+# translate():
+
+"""Used to replace number indvidual characters to 
+another character with the help of translation table obtained from maketrans() method."""
+
+"""Syntax : string.translate(table)"""
+
+print(string.translate(table))
+
+
+# replace():
+
+""" It is used to replace a character or a substring in a string."""
+
+"""Syntax: string.replace(old, new, count)
+
+old => It is the string that is to be replaced.
+new => It is the string that is going to replace the old string.
+
+"""
+
+word = "hello"
+
+print(word.replace("l", 'y'))
+
+
+# partition():
+
+""" It is uses to seperate a string based on the seperator passes as argument. It returns a tuple as output."""
+
+""" Syntax: variable.partition(seperator)"""
+
+sentence = "Hello I am good"
+
+print(sentence.partition('am'))
+
+
+# splitlines():
+
+""" Used to split a string based on escape sequence like \n and \r."""
+
+# String value with escape sequence.
+value = "Hello \n world \r I am born in India."
+
+print(value.splitlines())
+
+"This function has parameter called keepend=False if set to True it will also show the escape sequence."
+
+print(value.splitlines(True))
+
+
+# zfill():
+
+""" This function will return a copy of the string with '0' padded on the left side of the string based on the specified width."""
+
+""" If a string width is 5 but the parameter inside zfill() iss 10 then 5 '0' will be padded on the left side of the string."""
+
+st = "hello"
+
+print(st.zfill(10))
+
+
+# rfind():
+
+""" This function is similar to find() but starts checking for the character or substring from the right side of the string."""
+
+print("appleapple".rfind('l'))
+
+
+# rindex():
+
+""" This function is similar to index() but starts checking for the character or substring from the right side of the string."""
+
+print("appleapple".rindex('l'))
+
+
+# swapcase():
+
+""" This function converts all the upper case letters to lower case and vice versa."""
+
+print("AbCdEf".swapcase())
