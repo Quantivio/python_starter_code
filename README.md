@@ -3,7 +3,7 @@
 ## Installation using pip
 
 1. Open the Command Prompt
-2. Type `pip install jupyter notebook` and press Enter
+2. Type `pip install jupyterlab notebook` and press Enter
 3. Close the Command Prompt
 
 ## Running Jupyter Notebook
