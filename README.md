@@ -1,3 +1,11 @@
+# Getting Started with Python
+
+Here, you'll find a comprehensive set of Python starter code that's perfect for beginners 
+who are just starting to learn the language. Whether you're a complete novice or just 
+looking to brush up on your skills, this repository has everything you need to get 
+started with Python.
+
+
 # Setting up Jupyter Notebook
 
 ## Installation using pip
