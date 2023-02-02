@@ -1,12 +1,27 @@
-# Python-Starter-Codes
+# Setting up Jupyter Notebook
 
-## "For opening .ipynb files jupyter notebook must be installed."
+## Installation using pip
 
-# Jupyter Notebook setup:
-1. Open command prompt from windows menu or by pressing "windows + r" and type 'cmd' press "Enter".<br><br>
-![Windows + r](https://www.helptechnumber.com/wp-content/uploads/2018/06/Windows-R-key.png)<br>
-2. Type `pip install jupyter notebook` for installing jupyter notebook for python.<br>
-3. Close the command prompt.<br>
-4. Open command prompt in the desired folder.<br><br>
-![Windows + r](https://cloud.addictivetips.com/wp-content/uploads/2018/07/file-explorer-cmd.jpg)<br>
-5. To run jupyter notebook type `jupyter notebok` in cmd and press enter.
+1. Open the Command Prompt
+2. Type `pip install jupyter notebook` and press Enter
+3. Close the Command Prompt
+
+## Running Jupyter Notebook
+
+1. Open the Command Prompt
+2. Navigate to the desired folder
+3. Type `jupyter notebook` and press Enter
+
+# Setting up environment with Poetry
+
+## Installation of Poetry
+
+1. Open the Command Prompt
+2. Type `pip install poetry` and press Enter
+3. Close the Command Prompt
+
+## Creating a virtual environment with Poetry
+
+1. Open the Command Prompt
+2. Navigate to the root of your project
+3. Type `poetry install` and press Enter

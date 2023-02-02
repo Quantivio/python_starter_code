@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "python-starter-codes"
+version = "0.1.0"
+description = ""
+authors = ["Vetrichelvan <pythonhub.py@gmail.com>"]
+readme = "README.md"
+packages = [{include = "python_starter_codes"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+notebook = "^6.5.2"
+jupyterlab = "^3.6.0"
+
+
+[tool.poetry.group.development.dependencies]
+isort = "^5.12.0"
+pylint = "^2.16.1"
+pre-commit = "^3.0.3"
+mypy = "^0.991"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
