@@ -6,7 +6,7 @@
 
 """ capitalize() changes the first letter of the string into capital letter."""
 
-string_ = "smallletter"  # Declaring a variable with string value.
+string_ = "smallletter"  # Declaring a 1. variable with string value.
 
 print(string_.capitalize())
 
@@ -223,7 +223,7 @@ print(word.replace("l", 'y'))
 
 """ It is uses to seperate a string based on the seperator passes as argument. It returns a tuple as output."""
 
-""" Syntax: variable.partition(seperator)"""
+""" Syntax: 1. variable.partition(seperator)"""
 
 sentence = "Hello I am good"
 
