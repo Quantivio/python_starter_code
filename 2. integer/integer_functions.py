@@ -28,16 +28,16 @@ The to_bytes method in Python allows for the conversion of an integer into an ar
 The resulting array of bytes can be used for a variety of purposes, such as in serialization, file I/O, or data transmission over a network.
 """
 
-print(number.to_bytes(2, byteorder='big', signed=False))
-print(number.to_bytes(2, byteorder='little', signed=False))
+print(number.to_bytes(2, byteorder="big", signed=False))
+print(number.to_bytes(2, byteorder="little", signed=False))
 
 """ When working with negative numbers, the signed attribute in the to_bytes() method should be set to True. 
 This will ensure that the resulting byte representation accurately reflects the sign of the integer."""
 
 negative_number = -20  # Declaring a negative number.
 
-print(negative_number.to_bytes(2, byteorder='big', signed=True))
-print(negative_number.to_bytes(2, byteorder='little', signed=True))
+print(negative_number.to_bytes(2, byteorder="big", signed=True))
+print(negative_number.to_bytes(2, byteorder="little", signed=True))
 
 # Implementation of function from_bytes():
 
@@ -51,11 +51,11 @@ The from_bytes method in Python allows for the conversion of an array of bytes i
 The resulting integer can be used for a variety of purposes, such as in data processing, arithmetic operations, or indexing.
 """
 
-print(int.from_bytes(b'\x00\x14', byteorder='big', signed=False))
-print(int.from_bytes(b'\x14\x00', byteorder='little', signed=False))
+print(int.from_bytes(b"\x00\x14", byteorder="big", signed=False))
+print(int.from_bytes(b"\x14\x00", byteorder="little", signed=False))
 
 """ When working with negative numbers, the signed attribute in the from_bytes() method should be set to True. 
 This will ensure that the resulting byte representation accurately reflects the sign of the integer."""
 
-print(int.from_bytes(b'\xff\xec', byteorder='big', signed=True))
-print(int.from_bytes(b'\xec\xff', byteorder='little', signed=True))
+print(int.from_bytes(b"\xff\xec", byteorder="big", signed=True))
+print(int.from_bytes(b"\xec\xff", byteorder="little", signed=True))

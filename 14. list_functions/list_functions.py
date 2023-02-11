@@ -7,11 +7,11 @@ append() function will add element to the end of a list.
 
 """
 
-a = [1, 2, 3] # Declaring a list.
+a = [1, 2, 3]  # Declaring a list.
 
 a.append(4)
 
-print(a) # After appending print the list.
+print(a)  # After appending print the list.
 
 """ 
 2. clear():
@@ -20,11 +20,11 @@ clear() function clears all the elements in a list and will make it empty.
 
 a = ["a", 1, 2, 4.0]
 
-print(a) # Printing the list before clearing.
+print(a)  # Printing the list before clearing.
 
 a.clear()
 
-print(a) # Returns an empty list since the list is cleared.
+print(a)  # Returns an empty list since the list is cleared.
 
 """ 
 3. count() and index():
@@ -39,14 +39,14 @@ Shallow copy means any changes made to the copied list will not affect the origi
 """
 a = [1, 2, 3]
 
-b = a.copy() # Making a shallow copy of a.
+b = a.copy()  # Making a shallow copy of a.
 
 # Printing a and b before changing values.
 
-print(a) 
+print(a)
 print(b)
 
-b.remove(1) # Changing a value in b.and
+b.remove(1)  # Changing a value in b.and
 
 # Printing after making changes.
 
@@ -62,7 +62,7 @@ list.insert(index, object)
 
 a = [1, 2, 3]
 
-a.insert(0, 5) # Inserting 5 at the index position 0.
+a.insert(0, 5)  # Inserting 5 at the index position 0.
 
 print(a)
 
@@ -73,7 +73,7 @@ extend() is used to add a set of iterables to the end of a list.
 
 a = [1, 2, 3]
 
-a.extend([4,5,6,100,200])
+a.extend([4, 5, 6, 100, 200])
 
 print(a)
 
@@ -85,13 +85,15 @@ when no arguments are passed pop() removes the last element in a list.
 
 a = [1, 2, 3]
 
-print(a.pop()) # Since no argument is passed pop removes the last element. pop() returns the removed value.
+print(
+    a.pop()
+)  # Since no argument is passed pop removes the last element. pop() returns the removed value.
 
 print(a)
 
 a = [1, 2, 3, 4]
 
-print(a.pop(1)) # Passing the index value as 1.
+print(a.pop(1))  # Passing the index value as 1.
 
 print(a)
 
@@ -111,7 +113,7 @@ print(a)
 reverse() is used to reverse a list.
 """
 
-a = [50, 60, 70, 80, 90 ,100]
+a = [50, 60, 70, 80, 90, 100]
 
 a.reverse()
 
@@ -124,7 +126,7 @@ sort is used to sort a list in ascending order.
 
 """
 
-a = [7, 10, 2, 1,0, 65, 78]
+a = [7, 10, 2, 1, 0, 65, 78]
 
 a.sort()
 

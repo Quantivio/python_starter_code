@@ -18,6 +18,14 @@ pylint = "^2.16.1"
 pre-commit = "^3.0.3"
 mypy = "^0.991"
 
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.0.245"
+black = {extras = ["d"], version = "^23.1.0"}
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+
+[tool.ruff]

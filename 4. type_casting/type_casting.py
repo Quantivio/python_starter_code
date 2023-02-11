@@ -39,7 +39,7 @@ print(type(complex_float), complex_float)
 
 """NOTE: Only the numbers that are stored in string formats can be converted to integer, 3. float or complex."""
 
-string_integer = '100'
+string_integer = "100"
 
 # Type casting string to integer:
 print(type(string_integer), string_integer)

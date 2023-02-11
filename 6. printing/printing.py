@@ -1,7 +1,7 @@
 # Printing to the Console with the print() Function
 
 # A string can be specified with either single quotes '' or double quotes "".
-print('Hello world! within single quotes.')
+print("Hello world! within single quotes.")
 print("Hello world! within double quotes.")
 
 # Variables can be used inside the print() method to display to the console.

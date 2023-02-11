@@ -4,12 +4,12 @@ negative_number = -20  # Declaring a negative decimal value.
 
 floating_value = 1.5  # Declaring a floating-point value.
 
-string_single_quoted = 'string'  # Declaring a string value with single quotes.
+string_single_quoted = "string"  # Declaring a string value with single quotes.
 
 # Declaring a string value with double quotes.
 string_double_quoted = "double quoted string"
 
-character = 'c'  # Declaring a character value with single quotes.
+character = "c"  # Declaring a character value with single quotes.
 
 # Declaring a character value with double quotes.
 double_quoted_character = "s"
