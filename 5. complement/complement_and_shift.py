@@ -13,13 +13,14 @@
 
 print(~12)  # Output: -13
 
-# The above line of code uses the 2's complement method to convert a negative number to positive and store it in the computer.
-# Here, the binary representation of 12 is 00001100, and the complement of this number is 11110011.
-# The 2's complement of 11110011 is 11110011, which is equal to the 1's complement + 1.
+# The above line of code uses the 2's complement method to convert a negative number to positive and store it in the
+# computer. Here, the binary representation of 12 is 00001100, and the complement of this number is 11110011. The 2's
+# complement of 11110011 is 11110011, which is equal to the 1's complement + 1.
 
 # Left Shift Operator (<<)
 
-# The left shift operator shifts the bits of a binary number to the left, effectively multiplying the number by 2^n (where n is the number of shifts).
+# The left shift operator shifts the bits of a binary number to the left, effectively multiplying the number by 2^n (
+# where n is the number of shifts).
 
 #  Binary of 12                          = 1100.0000
 #  Applying left shift of 2 to 1100.0000 = 1100000.00
@@ -33,7 +34,8 @@ print(12 << 2)  # Output: 48
 
 # Right Shift Operator (>>)
 
-# The right shift operator shifts the bits of a binary number to the right, effectively dividing the number by 2^n (where n is the number of shifts).
+# The right shift operator shifts the bits of a binary number to the right, effectively dividing the number by 2^n (
+# where n is the number of shifts).
 
 # Internal working of the right shift operator
 

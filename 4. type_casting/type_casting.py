@@ -4,8 +4,9 @@ number = 20  # Declaring a integer value.
 floating_value = 10.5  # Declaring a 3. float value.
 string = "Apple"  # Declaring a string value.
 
-"""In Python, explicit type conversion can be performed using various built-in functions such as int(), float(), str(), etc. 
-These functions allow for the conversion of values between different data types, providing greater flexibility in handling and processing data."""
+"""In Python, explicit type conversion can be performed using various built-in functions such as int(), float(), 
+str(), etc. These functions allow for the conversion of values between different data types, providing greater 
+flexibility in handling and processing data."""
 
 # Type casting integer to 3. float:
 print(type(number), number)

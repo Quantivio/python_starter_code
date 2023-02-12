@@ -20,7 +20,7 @@ print(caps_string.casefold())
 
 # center():
 
-""" center() is used to center a string at the center of certain charcater that are repeating on left and right."""
+""" center() is used to center a string at the center of certain character that are repeating on left and right."""
 
 """ Syntax: variable_name.center(width, fillchar) """
 
@@ -233,9 +233,11 @@ print(value.splitlines(True))
 
 # zfill():
 
-""" This function will return a copy of the string with '0' padded on the left side of the string based on the specified width."""
+"""This function will return a copy of the string with '0' padded on the left side of the string based on the 
+specified width."""
 
-""" If a string width is 5 but the parameter inside zfill() iss 10 then 5 '0' will be padded on the left side of the string."""
+"""If a string width is 5 but the parameter inside zfill() iss 10 then 5 '0' will be padded on the left side of the 
+string."""
 
 st = "hello"
 
@@ -243,13 +245,15 @@ print(st.zfill(10))
 
 # rfind():
 
-""" This function is similar to find() but starts checking for the character or substring from the right side of the string."""
+"""This function is similar to find() but starts checking for the character or substring from the right side of the 
+string."""
 
 print("appleapple".rfind("l"))
 
 # rindex():
 
-""" This function is similar to index() but starts checking for the character or substring from the right side of the string."""
+"""This function is similar to index() but starts checking for the character or substring from the right side of the 
+string."""
 
 print("appleapple".rindex("l"))
 

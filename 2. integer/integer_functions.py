@@ -17,16 +17,16 @@ print(number.bit_length())
 # Implementation of function to_bytes():
 
 
-"""
-The to_bytes method in Python allows for the conversion of an integer into an array of bytes. The method takes in three arguments:
+"""The to_bytes method in Python allows for the conversion of an integer into an array of bytes. The method takes in 
+three arguments:
 
-    - length: the number of bytes the integer will be represented as.
-    - byteorder: the byte ordering to be used. This can be either 'big' or 'little', where 'big' represents 
-        the most significant byte at the start of the byte array and 'little' represents the most significant byte at the end of the byte array.
-    - signed: a boolean value indicating whether the integer should be treated as a signed or unsigned value.
+    - length: the number of bytes the integer will be represented as. - byteorder: the byte ordering to be used. This 
+    can be either 'big' or 'little', where 'big' represents the most significant byte at the start of the byte array 
+    and 'little' represents the most significant byte at the end of the byte array. - signed: a boolean value 
+    indicating whether the integer should be treated as a signed or unsigned value.
     
-The resulting array of bytes can be used for a variety of purposes, such as in serialization, file I/O, or data transmission over a network.
-"""
+The resulting array of bytes can be used for a variety of purposes, such as in serialization, file I/O, 
+or data transmission over a network."""
 
 print(number.to_bytes(2, byteorder="big", signed=False))
 print(number.to_bytes(2, byteorder="little", signed=False))
@@ -41,15 +41,16 @@ print(negative_number.to_bytes(2, byteorder="little", signed=True))
 
 # Implementation of function from_bytes():
 
-""" 
-The from_bytes method in Python allows for the conversion of an array of bytes into an integer. The method takes in three arguments:
+"""The from_bytes method in Python allows for the conversion of an array of bytes into an integer. The method takes 
+in three arguments:
 
-    bytes: the array of bytes to be converted into an integer.
-    byteorder: the byte ordering to be used. This can be either 'big' or 'little', where 'big' represents the most significant byte at the start of the byte array and 'little' represents the most significant byte at the end of the byte array.
-    signed: a boolean value indicating whether the integer should be treated as a signed or unsigned value.
+    bytes: the array of bytes to be converted into an integer. byteorder: the byte ordering to be used. This can be 
+    either 'big' or 'little', where 'big' represents the most significant byte at the start of the byte array and 
+    'little' represents the most significant byte at the end of the byte array. signed: a boolean value indicating 
+    whether the integer should be treated as a signed or unsigned value.
     
-The resulting integer can be used for a variety of purposes, such as in data processing, arithmetic operations, or indexing.
-"""
+The resulting integer can be used for a variety of purposes, such as in data processing, arithmetic operations, 
+or indexing."""
 
 print(int.from_bytes(b"\x00\x14", byteorder="big", signed=False))
 print(int.from_bytes(b"\x14\x00", byteorder="little", signed=False))

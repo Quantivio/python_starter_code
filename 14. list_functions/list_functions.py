@@ -39,7 +39,7 @@ Shallow copy means any changes made to the copied list will not affect the origi
 """
 a = [1, 2, 3]
 
-b = a.copy()  # Making a shallow copy of a.
+b = a.copy()  # Making a shallow copy of the list 'a'.
 
 # Printing a and b before changing values.
 
@@ -55,8 +55,8 @@ print(b)
 
 """
 5. insert()
-insert() is used to inser a element in the desired position or index in a list.
-Sytax:
+insert() is used to insert a element in the desired position or index in a list.
+Syntax:
 list.insert(index, object)
 """
 
@@ -85,9 +85,7 @@ when no arguments are passed pop() removes the last element in a list.
 
 a = [1, 2, 3]
 
-print(
-    a.pop()
-)  # Since no argument is passed pop removes the last element. pop() returns the removed value.
+print(a.pop())  # Since no argument is passed pop removes the last element. pop() returns the removed value.
 
 print(a)
 
@@ -97,10 +95,8 @@ print(a.pop(1))  # Passing the index value as 1.
 
 print(a)
 
-"""
-8. remove()
-remove() is used to remove an element from the list without index position. The element which needs to be removed from the list should be passed as argument.
-"""
+"""8. remove() remove() is used to remove an element from the list without index position. The element which needs to 
+be removed from the list should be passed as argument."""
 
 a = [100, 200, 300]
 

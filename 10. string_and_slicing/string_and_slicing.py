@@ -56,10 +56,11 @@ print(slice_variable[7:])
 print(slice_variable[7:20:3])
 
 # Negative Indexing
+
 # Negative indexing is used to access characters from the right end of the string, starting from -1.
 
 # In the string slice_variable, negative indexing can be used as follows:
-# A   n   t   i   d   i   s   e   s   t   a   b   l   i   s   h   m   e   n   t   a   r   i   a   n   i   s   m
+# a   n   t   i   d   i   s   e   s   t   a   b   l   i   s   h   m   e   n   t   a   r   i   a   n   i   s   m
 # -28 -27 -26 -25 -24 -23 -22 -21 -20 -19 -18 -17 -16 -15 -14 -13 -12  -11 -10 -9 -8 -7 -6 -5 -4 -3 -2 -1
 
 # Accessing the Last Element using Negative Indexing
@@ -69,14 +70,12 @@ print(slice_variable[7:20:3])
 
 print("Last element of slice_variable:", slice_variable[-1])
 
-
 # Accessing the Element before the Last using Negative Indexing
 
-# Negative indexing starts from -1, and the value of negative index increases as we go towards the first element of the string.
-# The following code retrieves the 20th element from the end of the string 'slice_variable'
+# Negative indexing starts from -1, and the value of negative index increases as we go towards the first element of
+# the string. The following code retrieves the 20th element from the end of the string 'slice_variable'
 
 print("20th element from the end of slice_variable:", slice_variable[-20])
-
 
 # Negative Slicing
 
@@ -86,19 +85,17 @@ print("20th element from the end of slice_variable:", slice_variable[-20])
 
 # Negative slicing with start_index and stop_index
 
-# To perform negative slicing, we need to specify the start_index and stop_index (inclusive and exclusive respectively).
-# The most common error in negative slicing is providing a higher start_index value on the left and a lower stop_index value on the right.
-# The following code retrieves an empty string as the result of the slicing.
+# To perform negative slicing, we need to specify the start_index and stop_index (inclusive and exclusive
+# respectively). The most common error in negative slicing is providing a higher start_index value on the left and a
+# lower stop_index value on the right. The following code retrieves an empty string as the result of the slicing.
 
 print("Negative slicing with start and stop index:", slice_variable[-1:-3])
-
 
 # Negative slicing to extract 'establishment'
 
 # The following code retrieves the substring 'establishment' using negative slicing
 
 print("Extracted substring using negative slicing:", slice_variable[-21:-8])
-
 
 # Negative slicing with step_count
 

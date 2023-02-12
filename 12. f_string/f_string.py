@@ -9,9 +9,7 @@ The syntax for f-strings is f"Hello {placeholder}", where values are placed with
 
 age = 20  # Declaring a integer value.
 
-f_string = (
-    f"Hello I am {age} old"  # Declaring a formatted string with the help of f-string.
-)
+f_string = f"Hello I am {age} old"  # Declaring a formatted string with the help of f-string.
 
 print(f_string)
 

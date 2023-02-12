@@ -4,28 +4,54 @@ version = "0.1.0"
 description = ""
 authors = ["Vetrichelvan <pythonhub.py@gmail.com>"]
 readme = "README.md"
-packages = [{include = "python_starter_codes"}]
+packages = [{ include = "python_starter_codes" }]
 
 [tool.poetry.dependencies]
-python = "^3.8"
+python = "^3.9"
 notebook = "^6.5.2"
-jupyterlab = "^3.6.0"
+jupyterlab = "^3.6.1"
 
 
 [tool.poetry.group.development.dependencies]
+black = {extras = ["jupyter"], version = "^23.1.0"}
 isort = "^5.12.0"
 pylint = "^2.16.1"
 pre-commit = "^3.0.3"
+ruff = "^0.0.245"
 mypy = "^0.991"
 
-
-[tool.poetry.group.dev.dependencies]
-ruff = "^0.0.245"
-black = {extras = ["d"], version = "^23.1.0"}
 
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
+[tool.black]
+line-length = 120
 
 [tool.ruff]
+src = ["."]
+target-version = "py311"
+fix = true
+show-source = true
+line-length = 120
+
+[tool.ruff.flake8-quotes]
+inline-quotes = "double"
+multiline-quotes = "double"
+docstring-quotes = "double"
+
+
+[tool.ruff.flake8-tidy-imports]
+ban-relative-imports = "all"
+
+[tool.ruff.flake8-type-checking]
+strict = true
+
+[tool.ruff.isort]
+combine-as-imports = true
+
+[tool.isort]
+profile = "black"
+
+[tool.mypy]
+strict = true
