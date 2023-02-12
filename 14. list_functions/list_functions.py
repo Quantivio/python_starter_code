@@ -18,7 +18,7 @@ print(a)  # After appending print the list.
 clear() function clears all the elements in a list and will make it empty.
 """
 
-a = ["a", 1, 2, 4.0]
+a: list[str | int] = ["a", 1, 2, 4.0]
 
 print(a)  # Printing the list before clearing.
 

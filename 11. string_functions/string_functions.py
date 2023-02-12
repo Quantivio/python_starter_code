@@ -5,6 +5,7 @@
 # capitalize():
 
 """ capitalize() changes the first letter of the string into capital letter."""
+from typing import Any
 
 string_ = "small-letter"  # Declaring a 1. variable with string value.
 
@@ -95,8 +96,8 @@ print(string_.find("let"))
 """ It is similar to format function but takes a single dictionary as input."""
 
 # Declaring a dictionary with two key value pair.
-dictionary = {"x": 4, "y": 5}
-print("{x}-{y}".format_map(dictionary))
+dictionary_ = {"x": 4, "y": 5}
+print("{x}-{y}".format_map(dictionary_))
 
 # index():
 
@@ -180,7 +181,7 @@ print(right_repeat.rstrip("q"))
 
 string = "abc"  # Declaring string value.
 
-dictionary = {"a": "123", "b": "456", "c": "789"}
+dictionary: dict[str, Any] = {"a": "123", "b": "456", "c": "789"}
 
 print(table := string.maketrans(dictionary))  # Using walrus operator.
 
