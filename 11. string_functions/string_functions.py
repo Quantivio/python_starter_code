@@ -2,29 +2,20 @@
 
 # There are various built-in methods that can be implemented on strings.
 
+
 # capitalize():
-
 """ capitalize() changes the first letter of the string into capital letter."""
-from typing import Any
-
-string_ = "small-letter"  # Declaring a 1. variable with string value.
-
-print(string_.capitalize())
+string_ = "small-letter"  # Declaring a variable with string value.
+print("Capitalized string:", string_.capitalize())
 
 # casefold():
-
 """ casefold() is an aggressive lower() method which converts string to case-folded string."""
-
 caps_string = "APPLE"
-
-print(caps_string.casefold())
+print("Casefolded string:", caps_string.casefold())
 
 # center():
-
 """ center() is used to center a string at the center of certain character that are repeating on left and right."""
-
 """ Syntax: variable_name.center(width, fillchar) """
-
 """
 Takes two arguments:
 
@@ -33,21 +24,15 @@ Takes two arguments:
 
 NOTE : If fillchar is not specified then the default character is space.
 """
-
-print(caps_string.center(24, "g"))
+print("Centered string:", caps_string.center(24, "g"))
 
 # count()
-
 """ count() is used to count the occurrence of a character or a substring in the original string."""
-
-print(string_.count("l"))
+print("Number of occurrences of 'l' in the string:", string_.count("l"))
 
 # encode()
-
 """ encode() returns an encoded version of the string."""
-
 """ Syntax: variable_name.encode(encoding, errors) """
-
 """ 
 Takes two arguments:
 
@@ -56,13 +41,7 @@ Takes two arguments:
 
 """
 
-# Errors:
-# strict              => default response which raises a UnicodeDecodeError exception on failure.
-# ignore              => ignores the unencodable unicode from the result
-# replace             => replaces the unencodable unicode to a question mark ?
-# xmlcharrefreplace   => inserts XML character reference instead of unencodable unicode
-# backslashreplace    => inserts a \\uNNNN space sequence instead of unencodable unicode
-# name-replace         => inserts a \N{...} escape sequence instead of unencodable unicode
+string_ = "letter"
 
 # endswith():
 
@@ -73,7 +52,7 @@ print(string_.endswith("e"))  # Returns False
 
 # expandstab():
 
-""" Syntax: variable_name.expandstab(tabsize=8)
+""" Syntax: variable_name.expandtabs(tabsize=8)
 """
 
 """ 
@@ -127,139 +106,124 @@ width => It is the complete length of the string that the resulting string must 
 fillchar => Minimum width of the string.
 NOTE : If fillchar is not specified then the default character is space. """
 
-animal = "cat"  # Declaring a string.
+print(string_.ljust(10, "."))
+print(string_.rjust(10, "."))
 
-print(animal.ljust(10, "*"))  # Left justify.
+animal = "cat"
 
-print(animal.rjust(10, "*"))  # Right justify.
+# Left justify
+print(animal.ljust(10, "*"))
+
+# Right justify
+print(animal.rjust(10, "*"))
 
 # lower() and upper():
 
-""" Used to convert a lower-case string to upper-case and vice versa. """
+# Declaring a lower-case string
+lower_case = "abcd"
 
-lower_case = "abcd"  # Declaring a string.
+# Declaring an upper-case string
+upper_case = "ABCD"
 
-upper_case = "ABCD"  # Declaring a string.
-
+# Converting lower-case to upper-case
 print(lower_case.upper())
 
+# Converting upper-case to lower-case
 print(upper_case.lower())
 
 # strip(), lstrip() and rstrip():
 
-""" Used to remove any repeating characters from a string from both sides. """
+# Declaring a string with repeating characters
+repeated_string = "qqqqqqqPythonqqqqq"
 
-""" This method takes one argument i.e the repeating character that must be removed. """
-
-""" When no argument is passed the default argument is space. """
-
-repeated_string = "qqqqqqqPythonqqqqq"  # Declaring a string.
-# Declaring a string.
+# Declaring a string with repeating spaces
 repeated_string_space = "         qqqqqqqPythonqqqqq               "
 
+# Removing repeating characters from the string
 print(repeated_string.strip("q"))
 
-# When no argument is passed the default argument is space.
+# Removing repeating spaces from the string
 print(repeated_string_space.strip())
 
-left_repeat = "qqqqqApple"  # Declaring a string.
+# Declaring a string with repeating characters on the left side
+left_repeat = "qqqqqApple"
 
-right_repeat = "Appleqqqqq"  # Declaring a string.
+# Declaring a string with repeating characters on the right side
+right_repeat = "Appleqqqqq"
 
+# Removing repeating characters from the left side of the string
 print(left_repeat.lstrip("q"))
 
+# Removing repeating characters from the right side of the string
 print(right_repeat.rstrip("q"))
 
 # maketrans():
 
-""" Maketrans returns a mapping table that can be used for translation using the translate() method."""
-""" Maketrans can be useful for translating various characters with other characters in a particular string."""
+# Declaring a string value
+string = "abc"
 
-""" Syntax: string.maketrans(x=dict, y, z)
-* y and z are optional.
-"""
+# Creating a dictionary to store the mapping of characters
+dictionary = {"a": "123", "b": "456", "c": "789"}
 
-string = "abc"  # Declaring string value.
-
-dictionary: dict[str, Any] = {"a": "123", "b": "456", "c": "789"}
-
-print(table := string.maketrans(dictionary))  # Using walrus operator.
+# Using the walrus operator to assign the value of the mapping table to a variable
+print(table := string.maketrans(dictionary))
 
 # translate():
 
-"""Used to replace number individual characters to 
-another character with the help of translation table obtained from maketrans() method."""
-
-"""Syntax : string.translate(table)"""
-
+# Replacing characters in the string using the mapping table obtained from maketrans()
 print(string.translate(table))
 
 # replace():
 
-""" It is used to replace a character or a substring in a string."""
-
-"""Syntax: string.replace(old, new, count)
-
-old => It is the string that is to be replaced.
-new => It is the string that is going to replace the old string.
-
-"""
-
+# Declaring a word
 word = "hello"
 
+# Replacing a character in the word
 print(word.replace("l", "y"))
 
 # partition():
 
-""" It is uses to separate a string based on the seperator passes as argument. It returns a tuple as output."""
-
-""" Syntax: 1. variable.partition(seperator)"""
-
+# Declaring a sentence
 sentence = "Hello I am good"
 
+# Separating the sentence based on the separator "am" and returning a tuple
 print(sentence.partition("am"))
 
 # splitlines():
 
-""" Used to split a string based on escape sequence like \n and \r."""
+"""Used to split a string into separate lines based on escape sequences, such as \n and \r."""
 
-# String value with escape sequence.
 value = "Hello \n world \r I am born in India."
 
-print(value.splitlines())
+# splitlines() without the keepend parameter
+print("splitlines() without keepend:", value.splitlines())
 
-"This function has parameter called keepend=False if set to True it will also show the escape sequence."
-
-print(value.splitlines(True))
+# splitlines() with keepend set to True
+print("splitlines() with keepend=True:", value.splitlines(True))
 
 # zfill():
 
-"""This function will return a copy of the string with '0' padded on the left side of the string based on the 
-specified width."""
+"""Returns a copy of the string with '0' characters padded on the left side, based on the specified width."""
 
-"""If a string width is 5 but the parameter inside zfill() iss 10 then 5 '0' will be padded on the left side of the 
-string."""
+string = "hello"
 
-st = "hello"
-
-print(st.zfill(10))
+# padding the string with 5 '0' characters
+print("zfill() with width=10:", string.zfill(10))
 
 # rfind():
 
-"""This function is similar to find() but starts checking for the character or substring from the right side of the 
-string."""
+"""Searches for the specified substring in the string, starting from the right side of the string."""
 
-print("appleapple".rfind("l"))
+print("rfind() result:", "appleapple".rfind("l"))
 
 # rindex():
 
-"""This function is similar to index() but starts checking for the character or substring from the right side of the 
-string."""
+"""Similar to rfind(), but raises an error if the substring is not found."""
 
-print("appleapple".rindex("l"))
+print("rindex() result:", "appleapple".rindex("l"))
 
 # swapcase():
 
-""" This function converts all the upper case letters to lower case and vice versa."""
+"""Converts upper case characters to lower case, and vice versa."""
 
-print("AbCdEf".swapcase())
+print("swapcase() result:", "AbCdEf".swapcase())

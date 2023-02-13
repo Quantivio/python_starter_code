@@ -13,7 +13,7 @@ jupyterlab = "^3.6.1"
 
 
 [tool.poetry.group.development.dependencies]
-black = {extras = ["jupyter"], version = "^23.1.0"}
+black = { extras = ["jupyter"], version = "^23.1.0" }
 isort = "^5.12.0"
 pylint = "^2.16.1"
 pre-commit = "^3.0.3"
@@ -28,18 +28,22 @@ build-backend = "poetry.core.masonry.api"
 [tool.black]
 line-length = 120
 
+[tool.isort]
+profile = "black"
+known_third_party = ["faag_cli"]
+
 [tool.ruff]
 src = ["."]
 target-version = "py311"
 fix = true
 show-source = true
 line-length = 120
+select = ["E", "F", "N801", "N802", "N803", "N805", "N806"]
 
 [tool.ruff.flake8-quotes]
 inline-quotes = "double"
 multiline-quotes = "double"
 docstring-quotes = "double"
-
 
 [tool.ruff.flake8-tidy-imports]
 ban-relative-imports = "all"
@@ -49,9 +53,7 @@ strict = true
 
 [tool.ruff.isort]
 combine-as-imports = true
-
-[tool.isort]
-profile = "black"
+known-third-party = ["faag_cli"]
 
 [tool.mypy]
 strict = true
